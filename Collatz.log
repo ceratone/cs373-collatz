@@ -1,0 +1,167 @@
+commit 9f93aa7e985ad028173cbe0d398bb9303588ff14
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 17:42:29 2016 -0600
+
+    checking for successful build
+
+commit 0d49259eea01846bacd499d0d88c483f575abd76
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 17:25:56 2016 -0600
+
+    checking for successful build
+
+commit f5d8ee07e38a7def1624b667bbe638f622cf82fd
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 17:18:25 2016 -0600
+
+    checking for successful travis build
+
+commit 577b96169dde7c4243563aa701633f7758a53487
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 17:16:39 2016 -0600
+
+    checking if successful build
+
+commit cd69bfa5cfc81754abad1470a23742e0a63a4909
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 17:08:57 2016 -0600
+
+    Created Collatz.log, close #20
+
+commit 6c6c9999ebb903f115789a0bb5d518a7fefb1120
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 16:55:12 2016 -0600
+
+    created Collatz.html, close #19
+
+commit d9492c0cf7e6510b6a9687f08892250f15a4f28f
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 16:53:07 2016 -0600
+
+    Collatz.html created, close #19
+
+commit 931c287bda4ad0291dbb434c951a21382e886263
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 16:43:58 2016 -0600
+
+    working global cache, close #12, close #17, close #18
+
+commit 74a803f3c528e436a3a561c9dd951aa8abe39abf
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 12:25:46 2016 -0600
+
+    tests pass, close #10
+
+commit c128373d80381ca9e4689a36a60c7e16817e9602
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 06:41:06 2016 -0600
+
+    spherecollatz added, close #16
+
+commit 93acb2030e9966fb2294aac80a02d13886d92156
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 06:39:20 2016 -0600
+
+    created 100+ acceptance tests, close #11
+
+commit 1b7f5d0c879496e91a937bf42ed59cf2e9ba55ee
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 05:36:48 2016 -0600
+
+    removed weird .nfs files
+
+commit b5fcddfdb2076c6ed90774a2d69714288dfff7f4
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 05:34:53 2016 -0600
+
+    argument validity assertions close #8
+
+commit 4aeaf3d636bab2d46d922bf3214f0dbf688e4812
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 05:34:07 2016 -0600
+
+    argument validity assertions close #8
+
+commit 2e0f009345c68bff51d9917474b5c9b1d91deb7c
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 04:14:22 2016 -0600
+
+    added post condition asserts, close #7
+
+commit 8a5207bec5de80d6580ead4b98e8b6a94891d128
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 04:10:46 2016 -0600
+
+    added return value validity assertion, close #9
+
+commit 0599528a029f7c2dc6ddd7c96b22e48421c1a4b4
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 03:57:19 2016 -0600
+
+    solved hang issue, made simple eval, close #14, close #6
+
+commit 531ee5ecce4ff46a1af510b098f42b53a88ac6a0
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 02:02:02 2016 -0600
+
+    unit tests done. close #3 close #4 close #5
+
+commit 1f2cf7c9b6e39e2455d8e4b6270b0b849a5a67ad
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 00:55:02 2016 -0600
+
+    checked and fixed unit tests, close #1 and close #2
+
+commit cd568962371dad5b4f2daf83fd0dd7d41c9219d1
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 00:24:33 2016 -0600
+
+    fixed travis.yml and gitignore
+
+commit b9f39fd98dee181ed250d5f904b825c06f3ba01e
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 00:01:54 2016 -0600
+
+    added travis.yml
+
+commit 62c0c54764edb3887072102e16835883b021ef60
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Wed Feb 3 23:40:04 2016 -0600
+
+    trying to commit
+
+commit 3a8bb776e2d4504da38d6f499d65087d5c6e4c56
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Wed Feb 3 23:33:24 2016 -0600
+
+    trying to commit
+
+commit bf199ab3ef632099a46d429f31b909b4cb9ef0fe
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Wed Feb 3 22:52:22 2016 -0600
+
+    Trying to commit after running test
+
+commit 38c50776fa76888e28ed659d330fb52c56915986
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Wed Feb 3 22:43:41 2016 -0600
+
+    Ran collatz
+
+commit 87eb06e5d9aecf8e291334694379646dbe31ec0f
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Wed Feb 3 22:20:13 2016 -0600
+
+    Added travis.yml file
+
+commit 4c4c08b343da5b4a908444ba41f541612c56b857
+Author: ceratone <dashmylius@gmail.com>
+Date:   Wed Feb 3 18:49:38 2016 -0600
+
+    Create .gitignore
+
+commit 52198d11544efa19b78b22720920a88201886a92
+Author: ceratone <dashmylius@gmail.com>
+Date:   Wed Feb 3 18:48:39 2016 -0600
+
+    Initial commit
