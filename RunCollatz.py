@@ -29,7 +29,6 @@ if __name__ == "__main__" :
 900 1000
 
 
-
 % RunCollatz.py < RunCollatz.in > RunCollatz.out
 
 
@@ -39,7 +38,6 @@ if __name__ == "__main__" :
 100 200 1
 201 210 1
 900 1000 1
-
 
 
 % pydoc3 -w Collatz

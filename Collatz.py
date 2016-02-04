@@ -29,8 +29,28 @@ def collatz_eval (i, j) :
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
-    # <your code>
-    return 1
+    a = 1
+    if (i>0 and i<1000000) and (j>0 and j<1000000):
+        if (i>j):
+            tmp = i
+            i = j
+            j = tmp
+        diff = j - i
+        while (diff != -1):
+            length = 1
+            current = j - diff
+            while current > 1:
+                if current % 2 == 1:
+                    current = (3 * current) + 1
+                else:
+                    current >>= 1
+                length += 1
+            if length > a:
+                a = length
+            diff -= 1
+    else:
+        raise ValueError("Input is not within valid range: > 0 && < 1,000,000")
+    return a
 
 # -------------
 # collatz_print
