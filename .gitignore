@@ -1,5 +1,6 @@
 # http://git-scm.com/docs/gitignore/
 
+collatz-tests
 __pycache__
 .coverage
 *.pyc

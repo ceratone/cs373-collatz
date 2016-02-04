@@ -58,7 +58,6 @@ def collatz_eval (i, j) :
     if i < j:
         assert i == itemp
         assert j == jtemp
-    assert a != 1
     return a
 
 # -------------
@@ -87,5 +86,4 @@ def collatz_solve (r, w) :
     for s in r :
         i, j = collatz_read(s)
         v    = collatz_eval(i, j)
-        print("collatz_eval value is: %i" %v)
         collatz_print(w, i, j, v)
