@@ -1,9 +1,9 @@
-FFFF..F
+FFFF......FFF
 ======================================================================
 FAIL: test_eval_1 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 41, in test_eval_1
+  File "TestCollatz.py", line 49, in test_eval_1
     self.assertEqual(v, 20)
 AssertionError: 1 != 20
 
@@ -11,7 +11,7 @@ AssertionError: 1 != 20
 FAIL: test_eval_2 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 45, in test_eval_2
+  File "TestCollatz.py", line 53, in test_eval_2
     self.assertEqual(v, 125)
 AssertionError: 1 != 125
 
@@ -19,7 +19,7 @@ AssertionError: 1 != 125
 FAIL: test_eval_3 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 49, in test_eval_3
+  File "TestCollatz.py", line 57, in test_eval_3
     self.assertEqual(v, 89)
 AssertionError: 1 != 89
 
@@ -27,15 +27,15 @@ AssertionError: 1 != 89
 FAIL: test_eval_4 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 53, in test_eval_4
+  File "TestCollatz.py", line 61, in test_eval_4
     self.assertEqual(v, 174)
 AssertionError: 1 != 174
 
 ======================================================================
-FAIL: test_solve (__main__.TestCollatz)
+FAIL: test_solve_1 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 72, in test_solve
+  File "TestCollatz.py", line 88, in test_solve_1
     self.assertEqual(w.getvalue(), "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
 AssertionError: '1 10 1\n100 200 1\n201 210 1\n900 1000 1\n' != '1 10 20\n100 200 125\n201 210 89\n900 1000 174\n'
 - 1 10 1
@@ -54,7 +54,48 @@ AssertionError: '1 10 1\n100 200 1\n201 210 1\n900 1000 1\n' != '1 10 20\n100 20
 ?           ++
 
 
+======================================================================
+FAIL: test_solve_2 (__main__.TestCollatz)
 ----------------------------------------------------------------------
-Ran 7 tests in 0.017s
+Traceback (most recent call last):
+  File "TestCollatz.py", line 93, in test_solve_2
+    self.assertEqual(w.getvalue(), "10 1 20\n999997 999998 259\n210 201 89\n")
+AssertionError: '10 1 1\n999997 999998 1\n210 201 1\n' != '10 1 20\n999997 999998 259\n210 201 89\n'
+- 10 1 1
+?      ^
++ 10 1 20
+?      ^^
+- 999997 999998 1
+?               ^
++ 999997 999998 259
+?               ^^^
+- 210 201 1
+?         ^
++ 210 201 89
+?         ^^
 
-FAILED (failures=5)
+
+======================================================================
+FAIL: test_solve_3 (__main__.TestCollatz)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestCollatz.py", line 98, in test_solve_3
+    self.assertEqual(w.getvalue(), "10 1 20\n20 1 20\n30 1 111\n")
+AssertionError: '10 1 1\n20 1 1\n30 1 1\n' != '10 1 20\n20 1 20\n30 1 111\n'
+- 10 1 1
+?      ^
++ 10 1 20
+?      ^^
+- 20 1 1
+?      ^
++ 20 1 20
+?      ^^
+- 30 1 1
++ 30 1 111
+?      ++
+
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.025s
+
+FAILED (failures=7)
