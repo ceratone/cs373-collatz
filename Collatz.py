@@ -50,6 +50,7 @@ def collatz_eval (i, j) :
             diff -= 1
     else:
         raise ValueError("Input is not within valid range: > 0 && < 1,000,000")
+    assert a > 0
     return a
 
 # -------------
