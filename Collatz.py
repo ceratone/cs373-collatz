@@ -23,6 +23,8 @@ def collatz_read (s) :
 # collatz_eval
 # ------------
 
+values = {}
+
 def collatz_eval (i, j) :
     """
     i the beginning of the range, inclusive
@@ -32,33 +34,42 @@ def collatz_eval (i, j) :
     itemp = i
     jtemp = j
     a = 1
-    if (i>0 and i<1000000) and (j>0 and j<1000000):
-        if (i>j):
-            tmp = i
-            i = j
-            j = tmp
-            itemp = i
-            jtemp = j
-        diff = j - i
-        while (diff != -1):
-            length = 1
-            current = j - diff
-            while current > 1:
-                if current % 2 == 1:
-                    current = (3 * current) + 1
-                else:
-                    current >>= 1
-                length += 1
+    assert (i>0 and i<1000000) and (j>0 and j<1000000)
+    if (i>j):
+        tmp = i
+        i = j
+        j = tmp
+        itemp = i
+        jtemp = j
+    diff = j - i
+    while (diff != -1):
+        current = j - diff
+        if current not in values:
+            length = collatz_eval_helper(current)
+        else:
+            length = values[current]
             if length > a:
                 a = length
             diff -= 1
-    else:
-        raise ValueError("Input is not within valid range: > 0 && < 1,000,000")
     assert a > 0
-    if i < j:
-        assert i == itemp
-        assert j == jtemp
+    assert i == itemp
+    assert j == jtemp
     return a
+
+def collatz_eval_helper (diff):
+    """
+    recursively go to lowest value by collatz for diff
+    work upwards to fill in later cache spots
+    """
+    if diff not in values:
+        if diff == 1:
+            values[diff] = 1
+        elif diff % 2 == 1:
+            values[diff] = collatz_eval_helper(3 * diff + 1) + 1
+        else:
+            temp = diff >> 1
+            values[diff] = collatz_eval_helper(temp) + 1
+    return values[diff]
 
 # -------------
 # collatz_print
