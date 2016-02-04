@@ -37,6 +37,8 @@ def collatz_eval (i, j) :
             tmp = i
             i = j
             j = tmp
+            itemp = i
+            jtemp = j
         diff = j - i
         while (diff != -1):
             length = 1
@@ -53,8 +55,10 @@ def collatz_eval (i, j) :
     else:
         raise ValueError("Input is not within valid range: > 0 && < 1,000,000")
     assert a > 0
-    assert i == itemp
-    assert j == jtemp
+    if i < j:
+        assert i == itemp
+        assert j == jtemp
+    assert a != 1
     return a
 
 # -------------
@@ -83,4 +87,5 @@ def collatz_solve (r, w) :
     for s in r :
         i, j = collatz_read(s)
         v    = collatz_eval(i, j)
+        print("collatz_eval value is: %i" %v)
         collatz_print(w, i, j, v)
