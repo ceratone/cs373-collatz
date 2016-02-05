@@ -1,3 +1,15 @@
+commit e5f84959e3e7bf21db00cfd456f5ccad9be40eda
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 18:37:35 2016 -0600
+
+    fixed testcollatz.out; Finished! hopefuly...
+
+commit f2ba24d7fa1249e424a4b503c900d68bd1d1736e
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 17:51:28 2016 -0600
+
+    Log exists, successful previous build, RunCollatz correct output close #13 close #15
+
 commit 9f93aa7e985ad028173cbe0d398bb9303588ff14
 Author: Darya Mylius <daryam@cs.utexas.edu>
 Date:   Thu Feb 4 17:42:29 2016 -0600
