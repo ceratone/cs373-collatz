@@ -104,25 +104,25 @@ class TestCollatz (TestCase) :
 if __name__ == "__main__" :
     main()
 
-"""
-% coverage3 run --branch TestCollatz.py >  TestCollatz.out 2>&1
+""" #pragma: no cover
+% coverage-3.5 run --branch TestCollatz.py >  TestCollatz.out 2>&1
 
 
 
-% coverage3 report -m                   >> TestCollatz.out
+% coverage-3.5 report -m                   >> TestCollatz.out
 
 
 
 % cat TestCollatz.out
 .......
 ----------------------------------------------------------------------
-Ran 7 tests in 0.001s
+Ran 13 tests in 0.007s
 
 OK
-Name          Stmts   Miss Branch BrMiss  Cover   Missing
----------------------------------------------------------
-Collatz          18      0      6      0   100%
-TestCollatz      33      1      2      1    94%   79
----------------------------------------------------------
-TOTAL            51      1      8      1    97%
-"""
+Name             Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------
+Collatz.py          44      0     16      0   100%
+TestCollatz.py      58      0      0      0   100%
+------------------------------------------------------------
+TOTAL              102      0     16      0   100%
+
