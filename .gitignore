@@ -1,6 +1,10 @@
 # http://git-scm.com/docs/gitignore/
 
+*.swp
+.nfs*
 collatz-tests
 __pycache__
 .coverage
 *.pyc
+SphereCollatz.in
+SphereCollatz.out
