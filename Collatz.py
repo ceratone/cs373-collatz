@@ -10,7 +10,8 @@
 # collatz_read
 # ------------
 
-def collatz_read (s) :
+
+def collatz_read(s):
     """
     read two ints
     s a string
@@ -25,7 +26,8 @@ def collatz_read (s) :
 
 values = {}
 
-def collatz_eval (i, j) :
+
+def collatz_eval(i, j):
     """
     i the beginning of the range, inclusive
     j the end       of the range, inclusive
@@ -34,8 +36,8 @@ def collatz_eval (i, j) :
     itemp = i
     jtemp = j
     a = 1
-    assert (i>0 and i<1000000) and (j>0 and j<1000000)
-    if (i>j):
+    assert (i > 0 and i < 1000000) and (j > 0 and j < 1000000)
+    if (i > j):
         tmp = i
         i = j
         j = tmp
@@ -56,7 +58,8 @@ def collatz_eval (i, j) :
     assert j == jtemp
     return a
 
-def collatz_eval_helper (diff):
+
+def collatz_eval_helper(diff):
     """
     recursively go to lowest value by collatz for diff
     work upwards to fill in later cache spots
@@ -75,7 +78,8 @@ def collatz_eval_helper (diff):
 # collatz_print
 # -------------
 
-def collatz_print (w, i, j, v) :
+
+def collatz_print(w, i, j, v):
     """
     print three ints
     w a writer
@@ -89,12 +93,13 @@ def collatz_print (w, i, j, v) :
 # collatz_solve
 # -------------
 
-def collatz_solve (r, w) :
+
+def collatz_solve(r, w):
     """
     r a reader
     w a writer
     """
-    for s in r :
+    for s in r:
         i, j = collatz_read(s)
-        v    = collatz_eval(i, j)
+        v = collatz_eval(i, j)
         collatz_print(w, i, j, v)

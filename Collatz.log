@@ -1,3 +1,21 @@
+commit d4b24c784c7d8098c47ace3b7618a68a7cac05fa
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Tue Jun 14 13:10:22 2016 -0500
+
+    fixed some slight project requirements
+
+commit 28fa445f1cb7b959bbd55673984e5c102d86fbf0
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Tue Jun 14 09:01:16 2016 -0500
+
+    fixed the coverage issue close #21 and done
+
+commit e4e79771c7e523a9ee26dc899ce273261f6bac03
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Feb 4 18:44:38 2016 -0600
+
+    final commit
+
 commit e5f84959e3e7bf21db00cfd456f5ccad9be40eda
 Author: Darya Mylius <daryam@cs.utexas.edu>
 Date:   Thu Feb 4 18:37:35 2016 -0600
