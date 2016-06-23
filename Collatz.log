@@ -1,3 +1,9 @@
+commit 6e4dc5d055f6a03dd28f6bc056d2c49a9a602556
+Author: Darya Mylius <daryam@cs.utexas.edu>
+Date:   Thu Jun 23 02:46:50 2016 -0500
+
+    updated SphereCollatz to be correct with implementation
+
 commit edac6318626be0b0419e2518f1d36287bd4b9415
 Author: Darya Mylius <daryam@cs.utexas.edu>
 Date:   Tue Jun 14 13:46:40 2016 -0500
