@@ -1,6 +1,7 @@
 # http://git-scm.com/docs/gitignore/
 
-*.tmp
+RunCollatz.tmp
+TestCollatz.tmp
 *.swp
 .nfs*
 collatz-tests

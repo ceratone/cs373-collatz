@@ -104,7 +104,7 @@
 345 57 144
 12 22 21
 3 4 8
-         2569414 function calls (410405 primitive calls) in 3.075 seconds
+         1954473 function calls (373301 primitive calls) in 1.688 seconds
 
    Ordered by: standard name
 
@@ -134,8 +134,8 @@
         3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:2124(__exit__)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:2147(_find_spec)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:217(release)
-        1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap>:2207(_find_and_load_unlocked)
-        1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap>:2234(_find_and_load)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap>:2207(_find_and_load_unlocked)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap>:2234(_find_and_load)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:2264(_handle_fromlist)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:257(__init__)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:261(__enter__)
@@ -165,19 +165,19 @@
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:850(has_location)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:87(_path_isfile)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:884(spec_from_file_location)
-        1    0.000    0.000    0.000    0.000 Collatz.py:13(<module>)
-      106    0.000    0.000    0.000    0.000 Collatz.py:13(collatz_read)
-      106    1.927    0.018    3.072    0.029 Collatz.py:28(collatz_eval)
-2568710/409702    1.145    0.000    1.145    0.000 Collatz.py:59(collatz_eval_helper)
-      106    0.000    0.000    0.000    0.000 Collatz.py:78(collatz_print)
-        1    0.000    0.000    3.073    3.073 Collatz.py:92(collatz_solve)
-        1    0.000    0.000    3.075    3.075 RunCollatz.py:13(<module>)
+        1    0.000    0.000    1.687    1.687 Collatz.py:100(collatz_solve)
+        1    0.000    0.000    0.000    0.000 Collatz.py:14(<module>)
+      106    0.000    0.000    0.000    0.000 Collatz.py:14(collatz_read)
+      106    0.834    0.008    1.687    0.016 Collatz.py:30(collatz_eval)
+1953769/372598    0.853    0.000    0.853    0.000 Collatz.py:66(collatz_eval_helper)
+      106    0.000    0.000    0.000    0.000 Collatz.py:85(collatz_print)
+        1    0.000    0.000    1.688    1.688 RunCollatz.py:13(<module>)
         2    0.000    0.000    0.000    0.000 codecs.py:316(decode)
         1    0.000    0.000    0.000    0.000 {built-in method _fix_co_filename}
         3    0.000    0.000    0.000    0.000 {built-in method acquire_lock}
         2    0.000    0.000    0.000    0.000 {built-in method allocate_lock}
         1    0.000    0.000    0.000    0.000 {built-in method any}
-      2/1    0.000    0.000    3.075    3.075 {built-in method exec}
+      2/1    0.000    0.000    1.688    1.688 {built-in method exec}
         2    0.000    0.000    0.000    0.000 {built-in method from_bytes}
         2    0.000    0.000    0.000    0.000 {built-in method get_ident}
         5    0.000    0.000    0.000    0.000 {built-in method getattr}

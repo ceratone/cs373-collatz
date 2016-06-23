@@ -6,11 +6,14 @@
 # Glenn P. Downing
 # ---------------------------
 
+import sys
+
 # ------------
 # collatz_read
 # ------------
 
-def collatz_read (s) :
+
+def collatz_read(s):
     """
     read two ints
     s a string
@@ -25,7 +28,8 @@ def collatz_read (s) :
 
 values = {}
 
-def collatz_eval (i, j) :
+
+def collatz_eval(i, j):
     """
     i the beginning of the range, inclusive
     j the end       of the range, inclusive
@@ -33,49 +37,54 @@ def collatz_eval (i, j) :
     """
     itemp = i
     jtemp = j
-    a = 1
-    assert (i>0 and i<1000000) and (j>0 and j<1000000)
-    if (i>j):
+    max = 1
+    assert (i > 0 and i < 1000000) and (j > 0 and j < 1000000)
+    if (i > j):
         tmp = i
         i = j
         j = tmp
         itemp = i
         jtemp = j
+    
+    #My recursive implementation. Now works for SPOJ
     diff = j - i
-    while (diff != -1):
-        current = j - diff
+    begin = i
+    if i < j//2:
+        begin = j//2
+    for current in range(begin, j+1):
+        length = 1
         if current not in values:
             length = collatz_eval_helper(current)
         else:
             length = values[current]
-            if length > a:
-                a = length
-            diff -= 1
-    assert a > 0
+        if length > max:
+            max = length
+        assert max > 0
     assert i == itemp
     assert j == jtemp
-    return a
+    return max
 
-def collatz_eval_helper (diff):
-    """
-    recursively go to lowest value by collatz for diff
-    work upwards to fill in later cache spots
-    """
+
+def collatz_eval_helper(diff):
+    
+    #recursively go to lowest value by collatz for diff
+    #work upwards to fill in later cache spots
+    
     if diff not in values:
         if diff == 1:
             values[diff] = 1
         elif diff % 2 == 1:
-            values[diff] = collatz_eval_helper(3 * diff + 1) + 1
+            values[diff] = collatz_eval_helper((diff+(diff>>1)+1)) + 2
         else:
             temp = diff >> 1
             values[diff] = collatz_eval_helper(temp) + 1
     return values[diff]
-
 # -------------
 # collatz_print
 # -------------
 
-def collatz_print (w, i, j, v) :
+
+def collatz_print(w, i, j, v):
     """
     print three ints
     w a writer
@@ -89,24 +98,22 @@ def collatz_print (w, i, j, v) :
 # collatz_solve
 # -------------
 
-def collatz_solve (r, w) :
+
+def collatz_solve(r, w):
     """
     r a reader
     w a writer
-    """
-    for s in r :
+    """ 
+    for s in r:
+        if not s.strip():
+            break
         i, j = collatz_read(s)
-        v    = collatz_eval(i, j)
+        v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
-
-import sys
-
-from Collatz import collatz_solve
-
+        
 # ----
 # main
 # ----
 
-if __name__ == "__main__" :
+if __name__ == "__main__":
     collatz_solve(sys.stdin, sys.stdout)
-
